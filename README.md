@@ -8,7 +8,7 @@ Model development was performed using the Mime R package, a machine-learning fra
 
 https://github.com/l-magnificence/Mime
 
-The original full training pipeline is not included in this repository. This repository provides the final trained model object and a reproducible example showing how to calculate CDPS in an external dataset.
+This repository provides the final trained model object and a reproducible example showing how to calculate CDPS in an external dataset.
 
 ## Repository contents
 
@@ -165,13 +165,6 @@ The script requires:
 install.packages(c("tidyverse", "glmnet"))
 ```
 
-The original model-development workflow used the Mime R package:
-
-```r
-# Mime package:
-# https://github.com/l-magnificence/Mime
-```
-
 ## Running the analysis
 
 Run the script in R from the repository directory:
@@ -207,4 +200,4 @@ This repository is intended to document and reproduce the application of the fin
 
 The full model-development strategy, including candidate gene selection, training cohorts, validation cohorts, feature-selection procedure, algorithm comparison, and survival-performance evaluation, is described in the Methods section of the manuscript.
 
-The original model-training code is not included. The available object `model_rsf_ridge.rds` corresponds to the final trained model used for CDPS calculation.
+The final CDPS model was generated using the standard workflow implemented in the Mime R package, without custom modifications to the package source code. The available object `model_rsf_ridge.rds` corresponds to the final trained model selected during the original model-development workflow and is provided here for CDPS calculation.
